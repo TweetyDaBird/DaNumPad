@@ -1,0 +1,20 @@
+This licence is copyright (c) CERN 2020, and the text of this licence is
+licensed as a whole under a Creative Commons Attribution-NoDerivatives 4.0
+International Licence, (CC BY-ND 4.0), available at
+https://creativecommons.org/licenses/by-nd/4.0/
+
+As a special exception to that licence, CERN expressly permits faithful
+translations of the entire licence into any language, and subsequent public
+display and distribution, provided that the resulting translation (which may
+include an attribution to the translator) is released under CC BY-ND 4.0
+attributing CERN as the copyright holder, and providing a link to the original
+licence text at https://ohwr.org/cern_ohl_s_v2.txt. This paragraph (translated
+appropriately) must be included when copying or translating the licence. You
+must make it clear (by at least including this paragraph) that the translation
+is unofficial and that the original text of the licence in the English language
+as released by CERN is definitive. You may also extract parts of the licence
+text (both in the original and in faithful translation) and copy, publicly
+display and distribute them for the purposes of education, training, providing
+legal advice, reviewing and critiquing the licence provided that you attribute
+CERN as above and also provided that such extracted parts do not form part of
+any document intended to have legal effect.
