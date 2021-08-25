@@ -4,12 +4,12 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 2
-Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
-Comment2 ""
+Title "DaNumPad unWired"
+Date "2021-08-25"
+Rev "v1.00"
+Comp "Markus Knutsson <markus.knutsson@tweety.se>"
+Comment1 "https://github.com/TweetyDaBird"
+Comment2 "Licensed under CERN-OHL-S v2 or superseding version"
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -915,17 +915,6 @@ NoConn ~ 9050 4400
 NoConn ~ 8750 2500
 NoConn ~ 8750 3800
 NoConn ~ 8750 3900
-$Comp
-L Device:Battery_Cell BT1
-U 1 1 61870F7F
-P 7100 6250
-F 0 "BT1" H 7218 6346 50  0000 L CNN
-F 1 "Battery_Cell" H 7218 6255 50  0000 L CNN
-F 2 "Keyboard Library:Lipo_battery_501528_1S_150mAh" V 7100 6310 50  0001 C CNN
-F 3 "~" V 7100 6310 50  0001 C CNN
-	1    7100 6250
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1250 2600 1250 2850
 Connection ~ 1250 2850
@@ -1030,7 +1019,7 @@ Wire Wire Line
 Wire Wire Line
 	6550 2850 6050 2850
 Connection ~ 6050 2850
-Text GLabel 10150 3000 2    50   Input ~ 0
+Text GLabel 10150 3100 2    50   Input ~ 0
 Switch
 Text GLabel 6200 2550 0    50   Input ~ 0
 Switch
@@ -1107,7 +1096,7 @@ Wire Wire Line
 	6550 3400 6550 3500
 Wire Wire Line
 	7000 3400 7250 3400
-Text GLabel 10150 3100 2    50   Input ~ 0
+Text GLabel 10150 3000 2    50   Input ~ 0
 LED
 Text GLabel 7250 3400 2    50   Input ~ 0
 LED
@@ -1185,8 +1174,6 @@ F 3 "~" H 10500 6200 50  0001 C CNN
 	1    10500 6200
 	-1   0    0    1   
 $EndComp
-NoConn ~ 7100 6050
-NoConn ~ 7100 6350
 $Comp
 L power:VCC #PWR0108
 U 1 1 61293A66

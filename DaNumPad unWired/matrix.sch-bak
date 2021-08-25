@@ -4,12 +4,12 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 2
-Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
-Comment2 ""
+Title "DaNumPad Glow"
+Date "2021-08-25"
+Rev "v1.00"
+Comp "Markus Knutsson <markus.knutsson@tweety.se>"
+Comment1 "https://github.com/TweetyDaBird"
+Comment2 "Licensed under CERN-OHL-S v2 or superseding version"
 Comment3 ""
 Comment4 ""
 $EndDescr
