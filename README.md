@@ -1,5 +1,5 @@
 ## Notice!!! 
-## DaNumPad is currently under active development! Clone/Build at your own peril! Update will follow when the design has been build tested!
+## DaNumPad is currently under active development! Clone/Build at your own peril! Update will follow when the design has been fully build-tested!
 
 # DaNumPad
 A 'family' of mechanical numpad/macro pads that can be configured either as a classic 17-key numpad, or as a 20 key (5x4) macro pad.
