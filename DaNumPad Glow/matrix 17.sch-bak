@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 3
 Title ""
-Date ""
+Date "2021-08-31"
 Rev ""
 Comp ""
 Comment1 ""
@@ -341,25 +341,24 @@ F 6 "1N4148W" H 3950 3450 50  0001 C CNN "Manufacturer_Part_Number"
 	1    3950 3450
 	0    -1   -1   0   
 $EndComp
-Connection ~ 3950 3550
 Wire Wire Line
 	3950 3350 3950 3250
 $Comp
 L Device:D_Small D12
 U 1 1 615DD6E4
-P 4550 3450
-F 0 "D12" V 4600 3850 50  0000 R CNN
-F 1 "1N4148W" V 4500 3850 50  0000 R CNN
-F 2 "Diode_SMD:D_SOD-123" H 4550 3275 50  0001 C CNN
-F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 4550 3450 50  0001 C CNN
-F 4 "C81598" H 4550 3450 50  0001 C CNN "LCSC"
-F 5 "ST(Semtech)" H 4550 3450 50  0001 C CNN "Manufacturer_Name"
-F 6 "1N4148W" H 4550 3450 50  0001 C CNN "Manufacturer_Part_Number"
-	1    4550 3450
+P 4550 2750
+F 0 "D12" V 4600 3150 50  0000 R CNN
+F 1 "1N4148W" V 4500 3150 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 4550 2575 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 4550 2750 50  0001 C CNN
+F 4 "C81598" H 4550 2750 50  0001 C CNN "LCSC"
+F 5 "ST(Semtech)" H 4550 2750 50  0001 C CNN "Manufacturer_Name"
+F 6 "1N4148W" H 4550 2750 50  0001 C CNN "Manufacturer_Part_Number"
+	1    4550 2750
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	4550 3350 4550 3250
+	4550 2650 4550 2550
 Wire Wire Line
 	2750 3550 3350 3550
 Wire Wire Line
@@ -369,8 +368,6 @@ Wire Wire Line
 	2950 3250 2900 3250
 Wire Wire Line
 	3550 3250 3500 3250
-Wire Wire Line
-	4150 3250 4100 3250
 Wire Wire Line
 	2300 1850 2300 2550
 Wire Wire Line
@@ -558,7 +555,6 @@ Connection ~ 2300 3250
 Connection ~ 2300 3950
 Connection ~ 2900 3250
 Connection ~ 3500 3250
-Connection ~ 4100 3250
 Wire Wire Line
 	3500 2550 3500 3250
 Connection ~ 3500 2550
@@ -579,16 +575,16 @@ Row_4
 $Comp
 L Switch:SW_Push SW21
 U 1 1 615FD54C
-P 4350 3250
-F 0 "SW21" H 4350 3535 50  0000 C CNN
-F 1 "SW_Push" H 4350 3444 50  0000 C CNN
-F 2 "keyswitches:Kailh_socket_MX_RGB" H 4350 3450 50  0001 C CNN
-F 3 "~" H 4350 3450 50  0001 C CNN
-	1    4350 3250
-	-1   0    0    -1  
+P 4350 2550
+F 0 "SW21" H 4350 2835 50  0000 C CNN
+F 1 "SW_Push" H 4350 2744 50  0000 C CNN
+F 2 "keyswitches:Kailh_socket_MX_RGB" H 4350 2750 50  0001 C CNN
+F 3 "~" H 4350 2750 50  0001 C CNN
+	1    4350 2550
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3950 3550 4550 3550
+	3950 2850 4550 2850
 $Comp
 L Switch:SW_Push SW22
 U 1 1 61603E38
@@ -598,7 +594,7 @@ F 1 "SW_Push" H 4350 4844 50  0000 C CNN
 F 2 "keyswitches:Kailh_socket_MX_RGB" H 4350 4850 50  0001 C CNN
 F 3 "~" H 4350 4850 50  0001 C CNN
 	1    4350 4650
-	-1   0    0    -1  
+	1    0    0    -1  
 $EndComp
 $Comp
 L Switch:SW_Push SW23
@@ -691,9 +687,7 @@ $EndComp
 Wire Wire Line
 	2750 4950 3950 4950
 Wire Wire Line
-	4100 3250 4100 4650
-Wire Wire Line
-	4100 1850 4100 3250
+	4100 1850 4100 2550
 Connection ~ 8450 1850
 Wire Wire Line
 	8450 1850 8450 1800
@@ -726,7 +720,7 @@ AR Path="/6127645A/612E41D9" Ref="RGB?"  Part="1"
 AR Path="/6159EE28/612E41D9" Ref="RGB1"  Part="1" 
 F 0 "RGB1" H 6075 1750 50  0000 L CNN
 F 1 "SK6812mini" H 6075 1250 50  0000 L CNN
-F 2 "Keyboard Library:SK6812MINI_Midmount_Reversible_v2" H 6100 1200 50  0001 L TNN
+F 2 "Keyboard Library:SK6812MINI_Midmount" H 6100 1200 50  0001 L TNN
 F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 6150 1125 50  0001 L TNN
 	1    6050 1500
 	1    0    0    -1  
@@ -782,11 +776,6 @@ Wire Wire Line
 	6850 4650 6850 4600
 Wire Wire Line
 	6850 4650 6050 4650
-Connection ~ 6850 4650
-Wire Wire Line
-	7650 4650 7650 4600
-Wire Wire Line
-	7650 4650 6850 4650
 Wire Wire Line
 	5350 4300 5750 4300
 Wire Wire Line
@@ -801,8 +790,6 @@ Wire Wire Line
 Wire Wire Line
 	7650 3950 8450 3950
 Connection ~ 7650 3950
-Wire Wire Line
-	7650 4000 7650 3950
 Wire Wire Line
 	6850 3900 6850 3950
 Wire Wire Line
@@ -951,9 +938,7 @@ $EndComp
 Wire Wire Line
 	6350 4300 6550 4300
 Wire Wire Line
-	7150 4300 7350 4300
-Wire Wire Line
-	5550 1200 6850 1200
+	5550 1200 6050 1200
 $Comp
 L LED:SK6812MINI RGB?
 U 1 1 612E425C
@@ -962,7 +947,7 @@ AR Path="/6127645A/612E425C" Ref="RGB?"  Part="1"
 AR Path="/6159EE28/612E425C" Ref="RGB2"  Part="1" 
 F 0 "RGB2" H 6875 1750 50  0000 L CNN
 F 1 "SK6812mini" H 6875 1250 50  0000 L CNN
-F 2 "Keyboard Library:SK6812MINI_Midmount_Reversible_v2" H 6900 1200 50  0001 L TNN
+F 2 "Keyboard Library:SK6812MINI_Midmount" H 6900 1200 50  0001 L TNN
 F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 6950 1125 50  0001 L TNN
 	1    6850 1500
 	1    0    0    -1  
@@ -978,7 +963,7 @@ AR Path="/6127645A/612E4264" Ref="RGB?"  Part="1"
 AR Path="/6159EE28/612E4264" Ref="RGB3"  Part="1" 
 F 0 "RGB3" H 7675 1750 50  0000 L CNN
 F 1 "SK6812mini" H 7675 1250 50  0000 L CNN
-F 2 "Keyboard Library:SK6812MINI_Midmount_Reversible_v2" H 7700 1200 50  0001 L TNN
+F 2 "Keyboard Library:SK6812MINI_Midmount" H 7700 1200 50  0001 L TNN
 F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 7750 1125 50  0001 L TNN
 	1    7650 1500
 	1    0    0    -1  
@@ -994,7 +979,7 @@ AR Path="/6127645A/612E426C" Ref="RGB?"  Part="1"
 AR Path="/6159EE28/612E426C" Ref="RGB4"  Part="1" 
 F 0 "RGB4" H 8475 1750 50  0000 L CNN
 F 1 "SK6812mini" H 8475 1250 50  0000 L CNN
-F 2 "Keyboard Library:SK6812MINI_Midmount_Reversible_v2" H 8500 1200 50  0001 L TNN
+F 2 "Keyboard Library:SK6812MINI_Midmount" H 8500 1200 50  0001 L TNN
 F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 8550 1125 50  0001 L TNN
 	1    8450 1500
 	1    0    0    -1  
@@ -1007,7 +992,7 @@ AR Path="/6127645A/612E4272" Ref="RGB?"  Part="1"
 AR Path="/6159EE28/612E4272" Ref="RGB8"  Part="1" 
 F 0 "RGB8" H 8475 2450 50  0000 L CNN
 F 1 "SK6812mini" H 8475 1950 50  0000 L CNN
-F 2 "Keyboard Library:SK6812MINI_Midmount_Reversible_v2" H 8500 1900 50  0001 L TNN
+F 2 "Keyboard Library:SK6812MINI_Midmount" H 8500 1900 50  0001 L TNN
 F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 8550 1825 50  0001 L TNN
 	1    8450 2200
 	-1   0    0    1   
@@ -1020,7 +1005,7 @@ AR Path="/6127645A/612E4278" Ref="RGB?"  Part="1"
 AR Path="/6159EE28/612E4278" Ref="RGB7"  Part="1" 
 F 0 "RGB7" H 7675 2450 50  0000 L CNN
 F 1 "SK6812mini" H 7675 1950 50  0000 L CNN
-F 2 "Keyboard Library:SK6812MINI_Midmount_Reversible_v2" H 7700 1900 50  0001 L TNN
+F 2 "Keyboard Library:SK6812MINI_Midmount" H 7700 1900 50  0001 L TNN
 F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 7750 1825 50  0001 L TNN
 	1    7650 2200
 	-1   0    0    1   
@@ -1033,7 +1018,7 @@ AR Path="/6127645A/612E427E" Ref="RGB?"  Part="1"
 AR Path="/6159EE28/612E427E" Ref="RGB6"  Part="1" 
 F 0 "RGB6" H 6875 2450 50  0000 L CNN
 F 1 "SK6812mini" H 6875 1950 50  0000 L CNN
-F 2 "Keyboard Library:SK6812MINI_Midmount_Reversible_v2" H 6900 1900 50  0001 L TNN
+F 2 "Keyboard Library:SK6812MINI_Midmount" H 6900 1900 50  0001 L TNN
 F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 6950 1825 50  0001 L TNN
 	1    6850 2200
 	-1   0    0    1   
@@ -1046,7 +1031,7 @@ AR Path="/6127645A/612E4284" Ref="RGB?"  Part="1"
 AR Path="/6159EE28/612E4284" Ref="RGB5"  Part="1" 
 F 0 "RGB5" H 6075 2450 50  0000 L CNN
 F 1 "SK6812mini" H 6075 1950 50  0000 L CNN
-F 2 "Keyboard Library:SK6812MINI_Midmount_Reversible_v2" H 6100 1900 50  0001 L TNN
+F 2 "Keyboard Library:SK6812MINI_Midmount" H 6100 1900 50  0001 L TNN
 F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 6150 1825 50  0001 L TNN
 	1    6050 2200
 	-1   0    0    1   
@@ -1061,7 +1046,7 @@ AR Path="/6127645A/612E428B" Ref="RGB?"  Part="1"
 AR Path="/6159EE28/612E428B" Ref="RGB9"  Part="1" 
 F 0 "RGB9" H 6075 3150 50  0000 L CNN
 F 1 "SK6812mini" H 6075 2650 50  0000 L CNN
-F 2 "Keyboard Library:SK6812MINI_Midmount_Reversible_v2" H 6100 2600 50  0001 L TNN
+F 2 "Keyboard Library:SK6812MINI_Midmount" H 6100 2600 50  0001 L TNN
 F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 6150 2525 50  0001 L TNN
 	1    6050 2900
 	1    0    0    -1  
@@ -1074,7 +1059,7 @@ AR Path="/6127645A/612E4291" Ref="RGB?"  Part="1"
 AR Path="/6159EE28/612E4291" Ref="RGB10"  Part="1" 
 F 0 "RGB10" H 6875 3150 50  0000 L CNN
 F 1 "SK6812mini" H 6875 2650 50  0000 L CNN
-F 2 "Keyboard Library:SK6812MINI_Midmount_Reversible_v2" H 6900 2600 50  0001 L TNN
+F 2 "Keyboard Library:SK6812MINI_Midmount" H 6900 2600 50  0001 L TNN
 F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 6950 2525 50  0001 L TNN
 	1    6850 2900
 	1    0    0    -1  
@@ -1087,7 +1072,7 @@ AR Path="/6127645A/612E4297" Ref="RGB?"  Part="1"
 AR Path="/6159EE28/612E4297" Ref="RGB11"  Part="1" 
 F 0 "RGB11" H 7675 3150 50  0000 L CNN
 F 1 "SK6812mini" H 7675 2650 50  0000 L CNN
-F 2 "Keyboard Library:SK6812MINI_Midmount_Reversible_v2" H 7700 2600 50  0001 L TNN
+F 2 "Keyboard Library:SK6812MINI_Midmount" H 7700 2600 50  0001 L TNN
 F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 7750 2525 50  0001 L TNN
 	1    7650 2900
 	1    0    0    -1  
@@ -1100,7 +1085,7 @@ AR Path="/6127645A/612E42A3" Ref="RGB?"  Part="1"
 AR Path="/6159EE28/612E42A3" Ref="RGB13"  Part="1" 
 F 0 "RGB13" H 6075 3850 50  0000 L CNN
 F 1 "SK6812mini" H 6075 3350 50  0000 L CNN
-F 2 "Keyboard Library:SK6812MINI_Midmount_Reversible_v2" H 6100 3300 50  0001 L TNN
+F 2 "Keyboard Library:SK6812MINI_Midmount" H 6100 3300 50  0001 L TNN
 F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 6150 3225 50  0001 L TNN
 	1    6050 3600
 	-1   0    0    1   
@@ -1113,7 +1098,7 @@ AR Path="/6127645A/612E42A9" Ref="RGB?"  Part="1"
 AR Path="/6159EE28/612E42A9" Ref="RGB14"  Part="1" 
 F 0 "RGB14" H 6875 3850 50  0000 L CNN
 F 1 "SK6812mini" H 6875 3350 50  0000 L CNN
-F 2 "Keyboard Library:SK6812MINI_Midmount_Reversible_v2" H 6900 3300 50  0001 L TNN
+F 2 "Keyboard Library:SK6812MINI_Midmount" H 6900 3300 50  0001 L TNN
 F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 6950 3225 50  0001 L TNN
 	1    6850 3600
 	-1   0    0    1   
@@ -1126,7 +1111,7 @@ AR Path="/6127645A/612E42AF" Ref="RGB?"  Part="1"
 AR Path="/6159EE28/612E42AF" Ref="RGB15"  Part="1" 
 F 0 "RGB15" H 7675 3850 50  0000 L CNN
 F 1 "SK6812mini" H 7675 3350 50  0000 L CNN
-F 2 "Keyboard Library:SK6812MINI_Midmount_Reversible_v2" H 7700 3300 50  0001 L TNN
+F 2 "Keyboard Library:SK6812MINI_Midmount" H 7700 3300 50  0001 L TNN
 F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 7750 3225 50  0001 L TNN
 	1    7650 3600
 	-1   0    0    1   
@@ -1139,7 +1124,7 @@ AR Path="/6127645A/612E42B5" Ref="RGB?"  Part="1"
 AR Path="/6159EE28/612E42B5" Ref="RGB16"  Part="1" 
 F 0 "RGB16" H 8475 3850 50  0000 L CNN
 F 1 "SK6812mini" H 8475 3350 50  0000 L CNN
-F 2 "Keyboard Library:SK6812MINI_Midmount_Reversible_v2" H 8500 3300 50  0001 L TNN
+F 2 "Keyboard Library:SK6812MINI_Midmount" H 8500 3300 50  0001 L TNN
 F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 8550 3225 50  0001 L TNN
 	1    8450 3600
 	-1   0    0    1   
@@ -1152,7 +1137,7 @@ AR Path="/6127645A/612E42BB" Ref="RGB?"  Part="1"
 AR Path="/6159EE28/612E42BB" Ref="RGB17"  Part="1" 
 F 0 "RGB17" H 6075 4550 50  0000 L CNN
 F 1 "SK6812mini" H 6075 4050 50  0000 L CNN
-F 2 "Keyboard Library:SK6812MINI_Midmount_Reversible_v2" H 6100 4000 50  0001 L TNN
+F 2 "Keyboard Library:SK6812MINI_Midmount" H 6100 4000 50  0001 L TNN
 F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 6150 3925 50  0001 L TNN
 	1    6050 4300
 	1    0    0    -1  
@@ -1165,22 +1150,9 @@ AR Path="/6127645A/612E42C1" Ref="RGB?"  Part="1"
 AR Path="/6159EE28/612E42C1" Ref="RGB18"  Part="1" 
 F 0 "RGB18" H 6875 4550 50  0000 L CNN
 F 1 "SK6812mini" H 6875 4050 50  0000 L CNN
-F 2 "Keyboard Library:SK6812MINI_Midmount_Reversible_v2" H 6900 4000 50  0001 L TNN
+F 2 "Keyboard Library:SK6812MINI_Midmount" H 6900 4000 50  0001 L TNN
 F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 6950 3925 50  0001 L TNN
 	1    6850 4300
-	1    0    0    -1  
-$EndComp
-$Comp
-L LED:SK6812MINI RGB?
-U 1 1 612E42C7
-P 7650 4300
-AR Path="/6127645A/612E42C7" Ref="RGB?"  Part="1" 
-AR Path="/6159EE28/612E42C7" Ref="RGB19"  Part="1" 
-F 0 "RGB19" H 7675 4550 50  0000 L CNN
-F 1 "SK6812mini" H 7675 4050 50  0000 L CNN
-F 2 "Keyboard Library:SK6812MINI_Midmount_Reversible_v2" H 7700 4000 50  0001 L TNN
-F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 7750 3925 50  0001 L TNN
-	1    7650 4300
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1294,34 +1266,6 @@ F 1 "GND" H 9755 2577 50  0000 C CNN
 F 2 "" H 9750 2750 50  0001 C CNN
 F 3 "" H 9750 2750 50  0001 C CNN
 	1    9750 2750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C?
-U 1 1 612E4309
-P 9750 1300
-AR Path="/6127645A/612E4309" Ref="C?"  Part="1" 
-AR Path="/6159EE28/612E4309" Ref="C2"  Part="1" 
-F 0 "C2" H 9842 1346 50  0000 L CNN
-F 1 "100nF" H 9842 1255 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 9750 1300 50  0001 C CNN
-F 3 "~" H 9750 1300 50  0001 C CNN
-	1    9750 1300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9750 1200 9250 1200
-$Comp
-L power:GND #PWR?
-U 1 1 612E4310
-P 9750 1400
-AR Path="/6127645A/612E4310" Ref="#PWR?"  Part="1" 
-AR Path="/6159EE28/612E4310" Ref="#PWR06"  Part="1" 
-F 0 "#PWR06" H 9750 1150 50  0001 C CNN
-F 1 "GND" H 9755 1227 50  0000 C CNN
-F 2 "" H 9750 1400 50  0001 C CNN
-F 3 "" H 9750 1400 50  0001 C CNN
-	1    9750 1400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1473,5 +1417,225 @@ Wire Wire Line
 	9250 3950 9750 3950
 Wire Wire Line
 	7950 2900 8950 2900
-NoConn ~ 7950 4300
+NoConn ~ 7150 4300
+$Comp
+L Device:C_Small C?
+U 1 1 613A26BA
+P 10700 2450
+AR Path="/6127645A/613A26BA" Ref="C?"  Part="1" 
+AR Path="/6159EE28/613A26BA" Ref="C22"  Part="1" 
+F 0 "C22" H 10792 2496 50  0000 L CNN
+F 1 "100nF" H 10792 2405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 10700 2450 50  0001 C CNN
+F 3 "~" H 10700 2450 50  0001 C CNN
+	1    10700 2450
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 613A26C0
+P 10700 2350
+AR Path="/6127645A/613A26C0" Ref="#PWR?"  Part="1" 
+AR Path="/6159EE28/613A26C0" Ref="#PWR022"  Part="1" 
+F 0 "#PWR022" H 10700 2100 50  0001 C CNN
+F 1 "GND" H 10705 2177 50  0000 C CNN
+F 2 "" H 10700 2350 50  0001 C CNN
+F 3 "" H 10700 2350 50  0001 C CNN
+	1    10700 2350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 613A26C6
+P 10200 2450
+AR Path="/6127645A/613A26C6" Ref="C?"  Part="1" 
+AR Path="/6159EE28/613A26C6" Ref="C12"  Part="1" 
+F 0 "C12" H 10292 2496 50  0000 L CNN
+F 1 "100nF" H 10292 2405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 10200 2450 50  0001 C CNN
+F 3 "~" H 10200 2450 50  0001 C CNN
+	1    10200 2450
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 613A26CC
+P 10200 2350
+AR Path="/6127645A/613A26CC" Ref="#PWR?"  Part="1" 
+AR Path="/6159EE28/613A26CC" Ref="#PWR021"  Part="1" 
+F 0 "#PWR021" H 10200 2100 50  0001 C CNN
+F 1 "GND" H 10205 2177 50  0000 C CNN
+F 2 "" H 10200 2350 50  0001 C CNN
+F 3 "" H 10200 2350 50  0001 C CNN
+	1    10200 2350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 613A26D2
+P 9750 2450
+AR Path="/6127645A/613A26D2" Ref="C?"  Part="1" 
+AR Path="/6159EE28/613A26D2" Ref="C11"  Part="1" 
+F 0 "C11" H 9842 2496 50  0000 L CNN
+F 1 "100nF" H 9842 2405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9750 2450 50  0001 C CNN
+F 3 "~" H 9750 2450 50  0001 C CNN
+	1    9750 2450
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 613A26D8
+P 9750 2350
+AR Path="/6127645A/613A26D8" Ref="#PWR?"  Part="1" 
+AR Path="/6159EE28/613A26D8" Ref="#PWR020"  Part="1" 
+F 0 "#PWR020" H 9750 2100 50  0001 C CNN
+F 1 "GND" H 9755 2177 50  0000 C CNN
+F 2 "" H 9750 2350 50  0001 C CNN
+F 3 "" H 9750 2350 50  0001 C CNN
+	1    9750 2350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 613A26DE
+P 9250 2450
+AR Path="/6127645A/613A26DE" Ref="C?"  Part="1" 
+AR Path="/6159EE28/613A26DE" Ref="C2"  Part="1" 
+F 0 "C2" H 9342 2496 50  0000 L CNN
+F 1 "100nF" H 9342 2405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9250 2450 50  0001 C CNN
+F 3 "~" H 9250 2450 50  0001 C CNN
+	1    9250 2450
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 613A26E4
+P 9250 2350
+AR Path="/6127645A/613A26E4" Ref="#PWR?"  Part="1" 
+AR Path="/6159EE28/613A26E4" Ref="#PWR06"  Part="1" 
+F 0 "#PWR06" H 9250 2100 50  0001 C CNN
+F 1 "GND" H 9255 2177 50  0000 C CNN
+F 2 "" H 9250 2350 50  0001 C CNN
+F 3 "" H 9250 2350 50  0001 C CNN
+	1    9250 2350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 613AA1F0
+P 10700 3850
+AR Path="/6127645A/613AA1F0" Ref="C?"  Part="1" 
+AR Path="/6159EE28/613AA1F0" Ref="C26"  Part="1" 
+F 0 "C26" H 10792 3896 50  0000 L CNN
+F 1 "100nF" H 10792 3805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 10700 3850 50  0001 C CNN
+F 3 "~" H 10700 3850 50  0001 C CNN
+	1    10700 3850
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 613AA1F6
+P 10700 3750
+AR Path="/6127645A/613AA1F6" Ref="#PWR?"  Part="1" 
+AR Path="/6159EE28/613AA1F6" Ref="#PWR026"  Part="1" 
+F 0 "#PWR026" H 10700 3500 50  0001 C CNN
+F 1 "GND" H 10705 3577 50  0000 C CNN
+F 2 "" H 10700 3750 50  0001 C CNN
+F 3 "" H 10700 3750 50  0001 C CNN
+	1    10700 3750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 613AA1FC
+P 10200 3850
+AR Path="/6127645A/613AA1FC" Ref="C?"  Part="1" 
+AR Path="/6159EE28/613AA1FC" Ref="C25"  Part="1" 
+F 0 "C25" H 10292 3896 50  0000 L CNN
+F 1 "100nF" H 10292 3805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 10200 3850 50  0001 C CNN
+F 3 "~" H 10200 3850 50  0001 C CNN
+	1    10200 3850
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 613AA202
+P 10200 3750
+AR Path="/6127645A/613AA202" Ref="#PWR?"  Part="1" 
+AR Path="/6159EE28/613AA202" Ref="#PWR025"  Part="1" 
+F 0 "#PWR025" H 10200 3500 50  0001 C CNN
+F 1 "GND" H 10205 3577 50  0000 C CNN
+F 2 "" H 10200 3750 50  0001 C CNN
+F 3 "" H 10200 3750 50  0001 C CNN
+	1    10200 3750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 613AA208
+P 9750 3850
+AR Path="/6127645A/613AA208" Ref="C?"  Part="1" 
+AR Path="/6159EE28/613AA208" Ref="C24"  Part="1" 
+F 0 "C24" H 9842 3896 50  0000 L CNN
+F 1 "100nF" H 9842 3805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9750 3850 50  0001 C CNN
+F 3 "~" H 9750 3850 50  0001 C CNN
+	1    9750 3850
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 613AA20E
+P 9750 3750
+AR Path="/6127645A/613AA20E" Ref="#PWR?"  Part="1" 
+AR Path="/6159EE28/613AA20E" Ref="#PWR024"  Part="1" 
+F 0 "#PWR024" H 9750 3500 50  0001 C CNN
+F 1 "GND" H 9755 3577 50  0000 C CNN
+F 2 "" H 9750 3750 50  0001 C CNN
+F 3 "" H 9750 3750 50  0001 C CNN
+	1    9750 3750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 613AA214
+P 9250 3850
+AR Path="/6127645A/613AA214" Ref="C?"  Part="1" 
+AR Path="/6159EE28/613AA214" Ref="C23"  Part="1" 
+F 0 "C23" H 9342 3896 50  0000 L CNN
+F 1 "100nF" H 9342 3805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9250 3850 50  0001 C CNN
+F 3 "~" H 9250 3850 50  0001 C CNN
+	1    9250 3850
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 613AA21A
+P 9250 3750
+AR Path="/6127645A/613AA21A" Ref="#PWR?"  Part="1" 
+AR Path="/6159EE28/613AA21A" Ref="#PWR023"  Part="1" 
+F 0 "#PWR023" H 9250 3500 50  0001 C CNN
+F 1 "GND" H 9255 3577 50  0000 C CNN
+F 2 "" H 9250 3750 50  0001 C CNN
+F 3 "" H 9250 3750 50  0001 C CNN
+	1    9250 3750
+	-1   0    0    1   
+$EndComp
+Connection ~ 6050 1200
+Wire Wire Line
+	6050 1200 6850 1200
+Connection ~ 10700 3950
+Connection ~ 10200 3950
+Connection ~ 10700 2550
+Connection ~ 3950 2850
+Wire Wire Line
+	4150 2550 4100 2550
+Connection ~ 4100 2550
+Wire Wire Line
+	4100 2550 4100 4650
 $EndSCHEMATC
