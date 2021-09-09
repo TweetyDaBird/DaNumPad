@@ -21,7 +21,7 @@ Available as two variations, wired and wireless with identical footprint, using 
 - Full Per-Key RGB
 - QMK compatible
 
-#### DaNumPad 20 Glow (Planned)
+#### DaNumPad 20 Glow
 - 20-Key macropad with two optional spots for rotary encoders.
 - Atmega32u4 MCU
 - Full Per-Key RGB
