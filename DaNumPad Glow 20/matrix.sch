@@ -4,12 +4,12 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 3
-Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
-Comment2 ""
+Title "DaNumPad - Glow 20"
+Date "2021-09-09"
+Rev "v1.0"
+Comp "Markus Knutsson <markus.knutsson@tweety.se>"
+Comment1 "https://github.com/TweetyDaBird"
+Comment2 "Licensed under CERN-OHL-S v2 or superseding version"
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -718,51 +718,10 @@ Text GLabel 1950 4250 0    50   Input ~ 0
 Row_3
 Text GLabel 1950 4950 0    50   Input ~ 0
 Row_4
-$Comp
-L Switch:SW_Push SW21
-U 1 1 615FD54C
-P 3150 5650
-F 0 "SW21" H 3150 5935 50  0000 C CNN
-F 1 "SW_Push" H 3150 5844 50  0000 C CNN
-F 2 "keyswitches:Kailh_socket_MX_RGB" H 3150 5850 50  0001 C CNN
-F 3 "~" H 3150 5850 50  0001 C CNN
-	1    3150 5650
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	3950 3550 4550 3550
-$Comp
-L Switch:SW_Push SW22
-U 1 1 61603E38
-P 3150 6150
-F 0 "SW22" H 3150 6435 50  0000 C CNN
-F 1 "SW_Push" H 3150 6344 50  0000 C CNN
-F 2 "keyswitches:Kailh_socket_MX_RGB" H 3150 6350 50  0001 C CNN
-F 3 "~" H 3150 6350 50  0001 C CNN
-	1    3150 6150
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW23
-U 1 1 61607A79
-P 3150 6650
-F 0 "SW23" H 3150 6935 50  0000 C CNN
-F 1 "SW_Push" H 3150 6844 50  0000 C CNN
-F 2 "keyswitches:Kailh_socket_MX_RGB" H 3150 6850 50  0001 C CNN
-F 3 "~" H 3150 6850 50  0001 C CNN
-	1    3150 6650
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4100 3250 4100 3950
-Text GLabel 2950 5650 0    50   Input ~ 0
-Col_3
-Text GLabel 2950 6150 0    50   Input ~ 0
-Col_3
-Text GLabel 2950 6650 0    50   Input ~ 0
-Col_0
-Text GLabel 3350 6650 2    50   Input ~ 0
-Alt_0
 Text GLabel 2800 4600 1    50   Input ~ 0
 Alt_0
 Wire Wire Line
@@ -770,20 +729,6 @@ Wire Wire Line
 Wire Wire Line
 	2800 4650 2750 4650
 Connection ~ 2750 4650
-Text GLabel 4650 4650 1    50   Input ~ 0
-Alt_Enter
-Wire Wire Line
-	4650 4650 4550 4650
-Connection ~ 4550 4650
-Text GLabel 3350 6150 2    50   Input ~ 0
-Alt_Enter
-Text GLabel 3350 5650 2    50   Input ~ 0
-Alt_Plus
-Text GLabel 4650 3250 1    50   Input ~ 0
-Alt_Plus
-Wire Wire Line
-	4650 3250 4550 3250
-Connection ~ 4550 3250
 Text GLabel 2800 1800 1    50   Input ~ 0
 Enc_0
 Wire Wire Line
@@ -819,10 +764,10 @@ F 3 "~" H 6650 2860 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR017
+L power:GND #PWR047
 U 1 1 6167A73B
 P 6650 1900
-F 0 "#PWR017" H 6650 1650 50  0001 C CNN
+F 0 "#PWR047" H 6650 1650 50  0001 C CNN
 F 1 "GND" H 6655 1727 50  0000 C CNN
 F 2 "" H 6650 1900 50  0001 C CNN
 F 3 "" H 6650 1900 50  0001 C CNN
@@ -830,10 +775,10 @@ F 3 "" H 6650 1900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR019
+L power:GND #PWR049
 U 1 1 6167EEF6
 P 6650 2900
-F 0 "#PWR019" H 6650 2650 50  0001 C CNN
+F 0 "#PWR049" H 6650 2650 50  0001 C CNN
 F 1 "GND" H 6655 2727 50  0000 C CNN
 F 2 "" H 6650 2900 50  0001 C CNN
 F 3 "" H 6650 2900 50  0001 C CNN
@@ -849,10 +794,10 @@ Enc_1_A
 Text GLabel 5750 2800 0    50   Input ~ 0
 Enc_1_B
 $Comp
-L Device:C_Small C9
+L Device:C_Small C27
 U 1 1 6168566A
 P 5900 1500
-F 0 "C9" H 5992 1546 50  0000 L CNN
+F 0 "C27" H 5992 1546 50  0000 L CNN
 F 1 "100nF" H 5992 1455 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 5900 1500 50  0001 C CNN
 F 3 "~" H 5900 1500 50  0001 C CNN
@@ -863,10 +808,10 @@ F 6 "CC0603KRX7R9BB104" H 5900 1500 50  0001 C CNN "Manufacturer_Part_Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C10
+L Device:C_Small C28
 U 1 1 61691868
 P 5900 1700
-F 0 "C10" H 5992 1746 50  0000 L CNN
+F 0 "C28" H 5992 1746 50  0000 L CNN
 F 1 "100nF" H 5992 1655 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 5900 1700 50  0001 C CNN
 F 3 "~" H 5900 1700 50  0001 C CNN
@@ -900,10 +845,10 @@ Wire Wire Line
 	5750 1800 5900 1800
 Connection ~ 5900 1800
 $Comp
-L power:GND #PWR016
+L power:GND #PWR046
 U 1 1 6169F665
 P 5750 1600
-F 0 "#PWR016" H 5750 1350 50  0001 C CNN
+F 0 "#PWR046" H 5750 1350 50  0001 C CNN
 F 1 "GND" V 5755 1472 50  0000 R CNN
 F 2 "" H 5750 1600 50  0001 C CNN
 F 3 "" H 5750 1600 50  0001 C CNN
@@ -911,10 +856,10 @@ F 3 "" H 5750 1600 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C_Small C11
+L Device:C_Small C29
 U 1 1 616AA649
 P 5900 2500
-F 0 "C11" H 5992 2546 50  0000 L CNN
+F 0 "C29" H 5992 2546 50  0000 L CNN
 F 1 "100nF" H 5992 2455 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 5900 2500 50  0001 C CNN
 F 3 "~" H 5900 2500 50  0001 C CNN
@@ -925,10 +870,10 @@ F 6 "CC0603KRX7R9BB104" H 5900 2500 50  0001 C CNN "Manufacturer_Part_Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C12
+L Device:C_Small C30
 U 1 1 616AA64F
 P 5900 2700
-F 0 "C12" H 5992 2746 50  0000 L CNN
+F 0 "C30" H 5992 2746 50  0000 L CNN
 F 1 "100nF" H 5992 2655 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 5900 2700 50  0001 C CNN
 F 3 "~" H 5900 2700 50  0001 C CNN
@@ -962,10 +907,10 @@ Wire Wire Line
 	5750 2800 5900 2800
 Connection ~ 5900 2800
 $Comp
-L power:GND #PWR018
+L power:GND #PWR048
 U 1 1 616B0A68
 P 5750 2600
-F 0 "#PWR018" H 5750 2350 50  0001 C CNN
+F 0 "#PWR048" H 5750 2350 50  0001 C CNN
 F 1 "GND" V 5755 2472 50  0000 R CNN
 F 2 "" H 5750 2600 50  0001 C CNN
 F 3 "" H 5750 2600 50  0001 C CNN
@@ -1030,39 +975,6 @@ F 1 "MountingHole" H 9200 3505 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.7mm" H 9100 3550 50  0001 C CNN
 F 3 "~" H 9100 3550 50  0001 C CNN
 	1    9100 3550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Keyboard_Library:Stabilizer_2u_MX ST1
-U 1 1 616D425C
-P 8800 4950
-F 0 "ST1" H 8986 5003 60  0000 L CNN
-F 1 "Stabilizer_2u_MX" H 8986 4897 60  0000 L CNN
-F 2 "keyswitches:Stabilizer_MX_2u" H 8800 4950 60  0001 C CNN
-F 3 "" H 8800 4950 60  0001 C CNN
-	1    8800 4950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Keyboard_Library:Stabilizer_2u_MX ST2
-U 1 1 616D4C96
-P 8800 5350
-F 0 "ST2" H 8986 5403 60  0000 L CNN
-F 1 "Stabilizer_2u_MX" H 8986 5297 60  0000 L CNN
-F 2 "keyswitches:Stabilizer_MX_2u" H 8800 5350 60  0001 C CNN
-F 3 "" H 8800 5350 60  0001 C CNN
-	1    8800 5350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Keyboard_Library:Stabilizer_2u_MX ST3
-U 1 1 616D52C0
-P 8800 5800
-F 0 "ST3" H 8986 5853 60  0000 L CNN
-F 1 "Stabilizer_2u_MX" H 8986 5747 60  0000 L CNN
-F 2 "keyswitches:Stabilizer_MX_2u" H 8800 5800 60  0001 C CNN
-F 3 "" H 8800 5800 60  0001 C CNN
-	1    8800 5800
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

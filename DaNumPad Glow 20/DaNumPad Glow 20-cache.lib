@@ -320,21 +320,10 @@ P 4 0 1 0 -170 0 -150 0 -150 40 -130 80 N
 X A A -300 100 100 R 50 50 1 1 P
 X B B -300 -100 100 R 50 50 1 1 P
 X C C -300 0 100 R 50 50 1 1 P
-X GND MP 0 -300 100 U 50 50 1 1 W
+X GND MP1 -50 -350 146 U 50 50 1 1 W
+X GND MP2 50 -350 148 U 50 50 1 1 W
 X S1 S1 300 100 100 L 50 50 1 1 P
 X S2 S2 300 -100 100 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Keyboard_Library_Stabilizer_2u_MX
-#
-DEF Keyboard_Library_Stabilizer_2u_MX ST 0 40 Y Y 1 F N
-F0 "ST" 0 -50 60 H V C CNN
-F1 "Keyboard_Library_Stabilizer_2u_MX" 0 50 60 H V C CNN
-F2 "keyswitches:Stabilizer_MX_2u" 0 0 60 H I C CNN
-F3 "" 0 0 60 H I C CNN
-DRAW
-C 0 0 158 0 1 0 N
 ENDDRAW
 ENDDEF
 #

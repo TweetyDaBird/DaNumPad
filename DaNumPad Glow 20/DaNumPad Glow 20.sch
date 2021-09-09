@@ -1,0 +1,1339 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 3
+Title "DaNumPad - Glow 20"
+Date "2021-09-09"
+Rev "v1.0"
+Comp "Markus Knutsson <markus.knutsson@tweety.se>"
+Comment1 "https://github.com/TweetyDaBird"
+Comment2 "Licensed under CERN-OHL-S v2 or superseding version"
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:GNDPWR #PWR08
+U 1 1 61240FF9
+P 1050 2950
+F 0 "#PWR08" H 1050 2750 50  0001 C CNN
+F 1 "GNDPWR" H 1054 2796 50  0000 C CNN
+F 2 "" H 1050 2900 50  0001 C CNN
+F 3 "" H 1050 2900 50  0001 C CNN
+	1    1050 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R1
+U 1 1 61249812
+P 2350 1300
+F 0 "R1" V 2250 1200 50  0000 C CNN
+F 1 "5.1K" V 2250 1400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2350 1300 50  0001 C CNN
+F 3 "" H 2350 1300 50  0001 C CNN
+F 4 "C23186" H 2350 1300 50  0001 C CNN "LCSC"
+F 5 "UNI-ROYAL(Uniroyal Elec)" H 2350 1300 50  0001 C CNN "Manufacturer_Name"
+F 6 "0603WAF5101T5E" H 2350 1300 50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "Basic" H 2350 1300 50  0001 C CNN "JLPCB Type"
+	1    2350 1300
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:USB_C_Receptacle_USB2.0 J1
+U 1 1 6124B919
+P 1550 1700
+F 0 "J1" H 1657 2567 50  0000 C CNN
+F 1 "USB_C_Receptacle_USB2.0" H 1657 2476 50  0000 C CNN
+F 2 "Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12" H 1700 1700 50  0001 C CNN
+F 3 "" H 1700 1700 50  0001 C CNN
+F 4 "C165948" H 1550 1700 50  0001 C CNN "LCSC"
+F 5 "HRO" H 1550 1700 50  0001 C CNN "Manufacturer_Name"
+F 6 "TYPE-C-31-M-12" H 1550 1700 50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "Extended" H 1550 1700 50  0001 C CNN "JLPCB Type"
+	1    1550 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 1600 2250 1600
+Wire Wire Line
+	2250 1600 2250 1700
+Wire Wire Line
+	2250 1700 2150 1700
+Wire Wire Line
+	2250 1700 2350 1700
+Connection ~ 2250 1700
+Wire Wire Line
+	2150 1800 2250 1800
+Wire Wire Line
+	2250 1800 2250 1900
+Wire Wire Line
+	2250 1900 2150 1900
+Connection ~ 2250 1800
+Wire Wire Line
+	2250 1800 2350 1800
+NoConn ~ 2150 2200
+NoConn ~ 2150 2300
+$Comp
+L Device:R_Small R2
+U 1 1 61252733
+P 2350 1400
+F 0 "R2" V 2450 1300 50  0000 C CNN
+F 1 "5.1K" V 2450 1500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2350 1400 50  0001 C CNN
+F 3 "" H 2350 1400 50  0001 C CNN
+F 4 "C23186" H 2350 1400 50  0001 C CNN "LCSC"
+F 5 "UNI-ROYAL(Uniroyal Elec)" H 2350 1400 50  0001 C CNN "Manufacturer_Name"
+F 6 "0603WAF5101T5E" H 2350 1400 50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "Basic" H 2350 1400 50  0001 C CNN "JLPCB Type"
+	1    2350 1400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2250 1300 2150 1300
+Wire Wire Line
+	2150 1400 2250 1400
+Wire Wire Line
+	2450 1300 2550 1300
+Wire Wire Line
+	2550 1300 2550 1400
+Wire Wire Line
+	2550 1400 2450 1400
+Text GLabel 2350 1800 2    50   Input ~ 0
+D+
+Text GLabel 2350 1700 2    50   Input ~ 0
+D-
+$Comp
+L Power_Protection:SRV05-4 U1
+U 1 1 61258BA0
+P 3450 1750
+F 0 "U1" H 3700 2300 50  0000 C CNN
+F 1 "SRV05-4" H 3700 2200 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 4150 1300 50  0001 C CNN
+F 3 "" H 3450 1750 50  0001 C CNN
+F 4 "C85364" H 3450 1750 50  0001 C CNN "LCSC"
+F 5 "ProTek Devices" H 3450 1750 50  0001 C CNN "Manufacturer_Name"
+F 6 "SRV05-4-P-T7" H 3450 1750 50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "Basic" H 3450 1750 50  0001 C CNN "JLPCB Type"
+	1    3450 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 1100 2650 1100
+$Comp
+L Device:Polyfuse_Small F1
+U 1 1 6125E6D7
+P 2750 1100
+F 0 "F1" V 2545 1100 50  0000 C CNN
+F 1 "0467.750NRHF" V 2636 1100 50  0000 C CNN
+F 2 "Fuse:Fuse_0603_1608Metric_Castellated" H 2800 900 50  0001 L CNN
+F 3 "" H 2750 1100 50  0001 C CNN
+F 4 "C206991" H 2750 1100 50  0001 C CNN "LCSC"
+F 5 "Littelfuse" H 2750 1100 50  0001 C CNN "Manufacturer_Name"
+F 6 "0467.750NRHF" H 2750 1100 50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "Extended" H 2750 1100 50  0001 C CNN "JLPCB Type"
+	1    2750 1100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4050 1100 3450 1100
+Connection ~ 3450 1100
+Wire Wire Line
+	3450 1100 2850 1100
+Wire Wire Line
+	3450 1250 3450 1100
+$Comp
+L power:GND #PWR09
+U 1 1 61279227
+P 2500 2950
+F 0 "#PWR09" H 2500 2700 50  0001 C CNN
+F 1 "GND" H 2505 2777 50  0000 C CNN
+F 2 "" H 2500 2950 50  0001 C CNN
+F 3 "" H 2500 2950 50  0001 C CNN
+	1    2500 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 1300 2550 1300
+Connection ~ 2550 1300
+Text GLabel 2950 1650 0    50   Input ~ 0
+D+
+Text GLabel 3950 1850 2    50   Input ~ 0
+D-
+$Comp
+L power:GND #PWR05
+U 1 1 6128AF1D
+P 3450 2250
+F 0 "#PWR05" H 3450 2000 50  0001 C CNN
+F 1 "GND" H 3455 2077 50  0000 C CNN
+F 2 "" H 3450 2250 50  0001 C CNN
+F 3 "" H 3450 2250 50  0001 C CNN
+	1    3450 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 2850 2250 2850
+Wire Wire Line
+	2500 2850 2500 2950
+$Comp
+L Device:D_TVS TVS1
+U 1 1 6129D1C2
+P 1900 3050
+F 0 "TVS1" H 1900 3300 50  0000 C CNN
+F 1 "BSD3C051V" H 1900 3200 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323" H 1900 3050 50  0001 C CNN
+F 3 "" H 1900 3050 50  0001 C CNN
+F 4 "C151996" H 1900 3050 50  0001 C CNN "LCSC"
+F 5 "Born" H 1900 3050 50  0001 C CNN "Manufacturer_Name"
+F 6 "BSD3C051V" H 1900 3050 50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "Extended" H 1900 3050 50  0001 C CNN "JLPCB Type"
+	1    1900 3050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2050 3050 2250 3050
+Wire Wire Line
+	2250 3050 2250 2850
+Connection ~ 2250 2850
+Wire Wire Line
+	2250 2850 2500 2850
+$Comp
+L Device:Ferrite_Bead_Small FB1
+U 1 1 611E26D2
+P 1900 2850
+F 0 "FB1" V 1663 2850 50  0000 C CNN
+F 1 "BLM15PX121SN1D" V 1754 2850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" V 1830 2850 50  0001 C CNN
+F 3 "" H 1900 2850 50  0001 C CNN
+F 4 "C88970" H 1900 2850 50  0001 C CNN "LCSC"
+F 5 "Murata Electronics" H 1900 2850 50  0001 C CNN "Manufacturer_Name"
+F 6 "BLM15PX121SN1D11" H 1900 2850 50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "Extended" H 1900 2850 50  0001 C CNN "JLPCB Type"
+	1    1900 2850
+	0    1    1    0   
+$EndComp
+Wire Notes Line
+	5100 3500 700  3500
+Wire Notes Line
+	700  4950 5100 4950
+Wire Notes Line
+	5100 700  5100 7550
+Text Notes 3900 2750 0    50   ~ 0
+USB C 2.0 Connector\n\nWith ESD Protection
+Wire Notes Line
+	6850 6550 5200 6550
+Text GLabel 9350 4350 2    50   Input ~ 0
+Col_0
+Text GLabel 9350 4250 2    50   Input ~ 0
+Col_1
+Text GLabel 9350 4150 2    50   Input ~ 0
+Col_2
+Text GLabel 9350 4050 2    50   Input ~ 0
+Col_3
+Text GLabel 9350 3850 2    50   Input ~ 0
+Row_0
+Text GLabel 9350 3950 2    50   Input ~ 0
+Row_1
+Text GLabel 9350 1850 2    50   Input ~ 0
+Row_2
+Text GLabel 9350 3350 2    50   Input ~ 0
+Row_3
+Text GLabel 9350 3250 2    50   Input ~ 0
+Row_4
+Wire Wire Line
+	1250 2600 1250 2850
+Connection ~ 1250 2850
+Wire Wire Line
+	1250 2850 1050 2850
+Wire Wire Line
+	1050 2850 1050 2950
+Text GLabel 5650 6150 0    50   Input ~ 0
+RESET
+$Comp
+L Keyboard_Library:TS-A002 reset1
+U 1 1 618DE85A
+P 6000 6150
+F 0 "reset1" H 6000 6435 50  0000 C CNN
+F 1 "TS-A002" H 6000 6344 50  0000 C CNN
+F 2 "Keyboard Library:SW_SPST_CK_RS282G05A3" H 6000 6350 50  0001 C CNN
+F 3 "" H 6000 6350 50  0001 C CNN
+F 4 "DNF" H 6000 6150 50  0001 C CNN "fit_field"
+	1    6000 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 6150 5650 6150
+Wire Wire Line
+	6200 6150 6350 6150
+$Comp
+L power:GND #PWR017
+U 1 1 618E62E1
+P 6350 6150
+F 0 "#PWR017" H 6350 5900 50  0001 C CNN
+F 1 "GND" H 6355 5977 50  0000 C CNN
+F 2 "" H 6350 6150 50  0001 C CNN
+F 3 "" H 6350 6150 50  0001 C CNN
+	1    6350 6150
+	1    0    0    -1  
+$EndComp
+Text GLabel 2950 1850 0    50   Input ~ 0
+D+
+Text GLabel 3950 1650 2    50   Input ~ 0
+D-
+Wire Wire Line
+	6850 1750 6450 1750
+Connection ~ 6850 1750
+Wire Wire Line
+	7150 1750 7100 1750
+Wire Wire Line
+	7150 1900 7150 1750
+Wire Wire Line
+	6850 1900 7150 1900
+Wire Wire Line
+	6850 1750 6850 1900
+Wire Wire Line
+	7000 1950 7600 1950
+Connection ~ 7000 1950
+Wire Wire Line
+	7000 1850 7000 1950
+Wire Wire Line
+	7000 1550 7600 1550
+Connection ~ 7000 1550
+Wire Wire Line
+	7000 1650 7000 1550
+Wire Wire Line
+	6450 1750 6450 1950
+Connection ~ 6450 1750
+Wire Wire Line
+	6800 1550 7000 1550
+Wire Wire Line
+	6800 1950 7000 1950
+Wire Wire Line
+	6900 1750 6850 1750
+$Comp
+L power:VCC #PWR?
+U 1 1 612C1811
+P 7550 2250
+AR Path="/5D8219F0/612C1811" Ref="#PWR?"  Part="1" 
+AR Path="/5D6CC2CC/612C1811" Ref="#PWR?"  Part="1" 
+AR Path="/5E135D8F/612C1811" Ref="#PWR?"  Part="1" 
+AR Path="/60039BC8/612C1811" Ref="#PWR?"  Part="1" 
+AR Path="/612C1811" Ref="#PWR06"  Part="1" 
+F 0 "#PWR06" H 7550 2100 50  0001 C CNN
+F 1 "VCC" H 7550 2400 50  0000 C CNN
+F 2 "" H 7550 2250 50  0001 C CNN
+F 3 "" H 7550 2250 50  0001 C CNN
+	1    7550 2250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9350 1850 8950 1850
+Wire Wire Line
+	9350 2050 8950 2050
+NoConn ~ 9350 2050
+NoConn ~ 9350 1450
+NoConn ~ 9350 2650
+NoConn ~ 9350 2450
+NoConn ~ 9350 2350
+NoConn ~ 9350 3050
+Wire Wire Line
+	8950 3650 9350 3650
+Wire Wire Line
+	8950 3850 9350 3850
+Wire Wire Line
+	9350 3150 8950 3150
+NoConn ~ 9350 3150
+Wire Wire Line
+	7450 2050 7750 2050
+Wire Wire Line
+	7600 1850 7600 1950
+Wire Wire Line
+	7750 1850 7600 1850
+Wire Wire Line
+	7600 1550 7600 1650
+NoConn ~ 7450 2050
+Wire Wire Line
+	6450 1950 6450 2750
+Text Label 9400 1950 0    50   ~ 0
+LED
+$Comp
+L power:GND #PWR?
+U 1 1 612C1835
+P 10400 1950
+AR Path="/5D8219F0/612C1835" Ref="#PWR?"  Part="1" 
+AR Path="/5D6CC2CC/612C1835" Ref="#PWR?"  Part="1" 
+AR Path="/5DEF6A4C/612C1835" Ref="#PWR?"  Part="1" 
+AR Path="/5E49A860/612C1835" Ref="#PWR?"  Part="1" 
+AR Path="/5E135D8F/612C1835" Ref="#PWR?"  Part="1" 
+AR Path="/60039BC8/612C1835" Ref="#PWR?"  Part="1" 
+AR Path="/612C1835" Ref="#PWR04"  Part="1" 
+F 0 "#PWR04" H 10400 1700 50  0001 C CNN
+F 1 "GND" H 10400 1800 50  0000 C CNN
+F 2 "" H 10400 1950 50  0001 C CNN
+F 3 "" H 10400 1950 50  0001 C CNN
+	1    10400 1950
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	10350 1950 10400 1950
+$Comp
+L Device:LED_Small LED_?
+U 1 1 612C1842
+P 10250 1950
+AR Path="/60039BC8/612C1842" Ref="LED_?"  Part="1" 
+AR Path="/612C1842" Ref="LED_1"  Part="1" 
+F 0 "LED_1" H 10250 2185 50  0000 C CNN
+F 1 "STATUS_LED" H 10250 2094 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" V 10250 1950 50  0001 C CNN
+F 3 "" V 10250 1950 50  0001 C CNN
+F 4 "" H 10250 1950 50  0001 C CNN "Field4"
+F 5 "Hubei KENTO Elec" H 10250 1950 50  0001 C CNN "Manufacturer_Name"
+F 6 "KT-0603R" H 10250 1950 50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "604-APT1608EC" H 10250 1950 50  0001 C CNN "Mouser Part Number"
+F 8 "" H 10250 1950 50  0001 C CNN "JLPCB Part #"
+F 9 "Basic" H 10250 1950 50  0001 C CNN "JLPCB Type"
+F 10 "C2286" H 10250 1950 50  0001 C CNN "LCSC"
+	1    10250 1950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 612C184E
+P 9850 1950
+AR Path="/5D8219F0/612C184E" Ref="R?"  Part="1" 
+AR Path="/5D6CC2CC/612C184E" Ref="R?"  Part="1" 
+AR Path="/5E135D8F/612C184E" Ref="R?"  Part="1" 
+AR Path="/60039BC8/612C184E" Ref="R?"  Part="1" 
+AR Path="/612C184E" Ref="R3"  Part="1" 
+F 0 "R3" V 9930 1950 50  0000 C CNN
+F 1 "33" V 9850 1950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 9780 1950 50  0001 C CNN
+F 3 "" H 9850 1950 50  0001 C CNN
+F 4 "" H 9850 1950 50  0001 C CNN "Field4"
+F 5 "Uniroyal Elec" H 9850 1950 50  0001 C CNN "Manufacturer_Name"
+F 6 "0603WAF330JT5E" H 9850 1950 50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "667-ERJ-3EKF33R0V" H 9850 1950 50  0001 C CNN "Mouser Part Number"
+F 8 "" H 9850 1950 50  0001 C CNN "JLPCB Part #"
+F 9 "Basic" H 9850 1950 50  0001 C CNN "JLPCB Type"
+F 10 "C23140" H 9850 1950 50  0001 C CNN "LCSC"
+	1    9850 1950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10150 1950 10000 1950
+Wire Wire Line
+	9350 2150 8950 2150
+Wire Wire Line
+	8950 2750 9350 2750
+Wire Wire Line
+	9350 3050 8950 3050
+NoConn ~ 9350 2850
+Wire Wire Line
+	8950 4350 9350 4350
+Wire Wire Line
+	6450 1550 6450 1750
+$Comp
+L Device:Crystal_GND24_Small X?
+U 1 1 612C1865
+P 7000 1750
+AR Path="/60039BC8/612C1865" Ref="X?"  Part="1" 
+AR Path="/612C1865" Ref="X1"  Part="1" 
+F 0 "X1" V 7200 2000 50  0000 R CNN
+F 1 "X322516MLB4SI" V 7050 2450 50  0000 R CNN
+F 2 "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm_HandSoldering" H 8450 1850 50  0001 L CNN
+F 3 "" H 8450 1750 50  0001 L CNN
+F 4 "Crystals 2.0x1.6x0.65mm 16MHz Crystal +/-40ppm Initial tolerance (Total)" H 8450 1650 50  0001 L CNN "Description"
+F 5 "0.7" H 8450 1550 50  0001 L CNN "Height"
+F 6 "81-XRCGB16M000FXN00R" H 8450 1450 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=81-XRCGB16M000FXN00R" H 8450 1350 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Yangxing Tech" H 8450 1250 50  0001 L CNN "Manufacturer_Name"
+F 9 "X322516MLB4SI" H 8450 1150 50  0001 L CNN "Manufacturer_Part_Number"
+F 10 "" H 7000 1750 50  0001 C CNN "Field4"
+F 11 "" H 7000 1750 50  0001 C CNN "JLPCB Part #"
+F 12 "Basic" H 7000 1750 50  0001 C CNN "JLPCB Type"
+F 13 "C13738" H 7000 1750 50  0001 C CNN "LCSC"
+	1    7000 1750
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 9350 2150
+NoConn ~ 9350 2750
+Wire Wire Line
+	6700 2550 6850 2550
+Wire Wire Line
+	6850 2450 6700 2450
+Wire Wire Line
+	7750 2450 7150 2450
+Wire Wire Line
+	7150 2550 7750 2550
+$Comp
+L Device:R R?
+U 1 1 612C1877
+P 7000 2450
+AR Path="/5D8219F0/612C1877" Ref="R?"  Part="1" 
+AR Path="/5D6CC2CC/612C1877" Ref="R?"  Part="1" 
+AR Path="/5E135D8F/612C1877" Ref="R?"  Part="1" 
+AR Path="/5F6ACAA0/612C1877" Ref="R?"  Part="1" 
+AR Path="/60039BC8/612C1877" Ref="R?"  Part="1" 
+AR Path="/612C1877" Ref="R4"  Part="1" 
+F 0 "R4" V 7080 2450 50  0000 C CNN
+F 1 "22" V 7000 2450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6930 2450 50  0001 C CNN
+F 3 "" H 7000 2450 50  0001 C CNN
+F 4 "" H 7000 2450 50  0001 C CNN "Field4"
+F 5 "Uniroyal Elec" H 7000 2450 50  0001 C CNN "Manufacturer_Name"
+F 6 "0603WAF220JT5E" H 7000 2450 50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "667-ERJ-3GEYJ220V" H 7000 2450 50  0001 C CNN "Mouser Part Number"
+F 8 "" H 7000 2450 50  0001 C CNN "JLPCB Part #"
+F 9 "Basic" H 7000 2450 50  0001 C CNN "JLPCB Type"
+F 10 "C23345" H 7000 2450 50  0001 C CNN "LCSC"
+	1    7000 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 612C1883
+P 7000 2550
+AR Path="/5D8219F0/612C1883" Ref="R?"  Part="1" 
+AR Path="/5D6CC2CC/612C1883" Ref="R?"  Part="1" 
+AR Path="/5E135D8F/612C1883" Ref="R?"  Part="1" 
+AR Path="/5F6ACAA0/612C1883" Ref="R?"  Part="1" 
+AR Path="/60039BC8/612C1883" Ref="R?"  Part="1" 
+AR Path="/612C1883" Ref="R5"  Part="1" 
+F 0 "R5" V 7080 2550 50  0000 C CNN
+F 1 "22" V 7000 2550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6930 2550 50  0001 C CNN
+F 3 "" H 7000 2550 50  0001 C CNN
+F 4 "" H 7000 2550 50  0001 C CNN "Field4"
+F 5 "Uniroyal Elec" H 7000 2550 50  0001 C CNN "Manufacturer_Name"
+F 6 "0603WAF220JT5E" H 7000 2550 50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "667-ERJ-3GEYJ220V" H 7000 2550 50  0001 C CNN "Mouser Part Number"
+F 8 "" H 7000 2550 50  0001 C CNN "JLPCB Part #"
+F 9 "Basic" H 7000 2550 50  0001 C CNN "JLPCB Type"
+F 10 "C23345" H 7000 2550 50  0001 C CNN "LCSC"
+	1    7000 2550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8950 2450 9350 2450
+Wire Wire Line
+	8950 2350 9350 2350
+Wire Wire Line
+	1700 3900 1950 3900
+Connection ~ 1700 3900
+Wire Wire Line
+	1700 4050 1700 3900
+Wire Wire Line
+	1700 4400 1950 4400
+Connection ~ 1700 4400
+Wire Wire Line
+	1700 4250 1700 4400
+$Comp
+L Device:C_Small C?
+U 1 1 612C1897
+P 1700 4150
+AR Path="/5D8219F0/612C1897" Ref="C?"  Part="1" 
+AR Path="/5D6CC2CC/612C1897" Ref="C?"  Part="1" 
+AR Path="/5E135D8F/612C1897" Ref="C?"  Part="1" 
+AR Path="/60039BC8/612C1897" Ref="C?"  Part="1" 
+AR Path="/612C1897" Ref="C8"  Part="1" 
+F 0 "C8" H 1725 4250 50  0000 L CNN
+F 1 "100nF" H 1725 4050 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1738 4000 50  0001 C CNN
+F 3 "" H 1700 4150 50  0001 C CNN
+F 4 "" H 1700 4150 50  0001 C CNN "Field4"
+F 5 "YAGEO" H 1700 4150 50  0001 C CNN "Manufacturer_Name"
+F 6 "CC0603KRX7R9BB104" H 1700 4150 50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "581-06035C104JAT2A" H 1700 4150 50  0001 C CNN "Mouser Part Number"
+F 8 "" H 1700 4150 50  0001 C CNN "JLPCB Part #"
+F 9 "Basic" H 1700 4150 50  0001 C CNN "JLPCB Type"
+F 10 "C14663" H 1700 4150 50  0001 C CNN "LCSC"
+	1    1700 4150
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9350 2850 8950 2850
+NoConn ~ 9350 2950
+Wire Wire Line
+	1450 3900 1700 3900
+Wire Wire Line
+	1450 4400 1700 4400
+Wire Wire Line
+	7650 2250 7650 2950
+Wire Wire Line
+	7650 3150 7650 3300
+Wire Wire Line
+	7650 2250 7750 2250
+Connection ~ 7650 2250
+Wire Wire Line
+	1950 4400 1950 4300
+Wire Wire Line
+	1950 4000 1950 3900
+$Comp
+L power:GND #PWR?
+U 1 1 612C18A7
+P 7650 3300
+AR Path="/5D8219F0/612C18A7" Ref="#PWR?"  Part="1" 
+AR Path="/5D6CC2CC/612C18A7" Ref="#PWR?"  Part="1" 
+AR Path="/5E135D8F/612C18A7" Ref="#PWR?"  Part="1" 
+AR Path="/60039BC8/612C18A7" Ref="#PWR?"  Part="1" 
+AR Path="/612C18A7" Ref="#PWR010"  Part="1" 
+F 0 "#PWR010" H 7650 3050 50  0001 C CNN
+F 1 "GND" H 7650 3150 50  0000 C CNN
+F 2 "" H 7650 3300 50  0001 C CNN
+F 3 "" H 7650 3300 50  0001 C CNN
+	1    7650 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 612C18AD
+P 9550 3550
+AR Path="/5D8219F0/612C18AD" Ref="#PWR?"  Part="1" 
+AR Path="/5D6CC2CC/612C18AD" Ref="#PWR?"  Part="1" 
+AR Path="/5E135D8F/612C18AD" Ref="#PWR?"  Part="1" 
+AR Path="/60039BC8/612C18AD" Ref="#PWR?"  Part="1" 
+AR Path="/612C18AD" Ref="#PWR011"  Part="1" 
+F 0 "#PWR011" H 9550 3300 50  0001 C CNN
+F 1 "GND" H 9550 3400 50  0000 C CNN
+F 2 "" H 9550 3550 50  0001 C CNN
+F 3 "" H 9550 3550 50  0001 C CNN
+	1    9550 3550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9500 3550 9550 3550
+$Comp
+L Device:R R?
+U 1 1 612C18BA
+P 9350 3550
+AR Path="/5D8219F0/612C18BA" Ref="R?"  Part="1" 
+AR Path="/5D6CC2CC/612C18BA" Ref="R?"  Part="1" 
+AR Path="/5E135D8F/612C18BA" Ref="R?"  Part="1" 
+AR Path="/60039BC8/612C18BA" Ref="R?"  Part="1" 
+AR Path="/612C18BA" Ref="R6"  Part="1" 
+F 0 "R6" V 9430 3550 50  0000 C CNN
+F 1 "10k" V 9350 3550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 9280 3550 50  0001 C CNN
+F 3 "" H 9350 3550 50  0001 C CNN
+F 4 "" H 9350 3550 50  0001 C CNN "Field4"
+F 5 "Uniroyal Elec" H 9350 3550 50  0001 C CNN "Manufacturer_Name"
+F 6 "0603WAF1002T5E" H 9350 3550 50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "667-ERJ-3GEYJ103V" H 9350 3550 50  0001 C CNN "Mouser Part Number"
+F 8 "" H 9350 3550 50  0001 C CNN "JLPCB Part #"
+F 9 "Basic" H 9350 3550 50  0001 C CNN "JLPCB Type"
+F 10 "C25804" H 9350 3550 50  0001 C CNN "LCSC"
+	1    9350 3550
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	9200 3550 8950 3550
+Wire Wire Line
+	8350 950  8350 1150
+Wire Wire Line
+	8450 950  8450 1150
+Wire Wire Line
+	8350 950  8450 950 
+Connection ~ 8350 950 
+Wire Wire Line
+	8250 950  8350 950 
+Wire Wire Line
+	8250 1150 8250 950 
+$Comp
+L Device:C C?
+U 1 1 612C18CD
+P 1950 4150
+AR Path="/5D8219F0/612C18CD" Ref="C?"  Part="1" 
+AR Path="/5D6CC2CC/612C18CD" Ref="C?"  Part="1" 
+AR Path="/5E135D8F/612C18CD" Ref="C?"  Part="1" 
+AR Path="/60039BC8/612C18CD" Ref="C?"  Part="1" 
+AR Path="/612C18CD" Ref="C9"  Part="1" 
+F 0 "C9" H 1975 4250 50  0000 L CNN
+F 1 "4.7uF" H 1975 4050 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 1988 4000 50  0001 C CNN
+F 3 "" H 1950 4150 50  0001 C CNN
+F 4 "" H 1950 4150 50  0001 C CNN "Field4"
+F 5 "Samsung Electro-Mechanics" H 1950 4150 50  0001 C CNN "Manufacturer_Name"
+F 6 "CL21A475KAQNNNE" H 1950 4150 50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "810-C2012X7R475K125C" H 1950 4150 50  0001 C CNN "Mouser Part Number"
+F 8 "" H 1950 4150 50  0001 C CNN "JLPCB Part #"
+F 9 "Basic" H 1950 4150 50  0001 C CNN "JLPCB Type"
+F 10 "C1779" H 1950 4150 50  0001 C CNN "LCSC"
+	1    1950 4150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 612C18DB
+P 950 4150
+AR Path="/5D8219F0/612C18DB" Ref="C?"  Part="1" 
+AR Path="/5D6CC2CC/612C18DB" Ref="C?"  Part="1" 
+AR Path="/5E135D8F/612C18DB" Ref="C?"  Part="1" 
+AR Path="/60039BC8/612C18DB" Ref="C?"  Part="1" 
+AR Path="/612C18DB" Ref="C5"  Part="1" 
+F 0 "C5" H 975 4250 50  0000 L CNN
+F 1 "100nF" H 975 4050 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 988 4000 50  0001 C CNN
+F 3 "" H 950 4150 50  0001 C CNN
+F 4 "" H 950 4150 50  0001 C CNN "Field4"
+F 5 "YAGEO" H 950 4150 50  0001 C CNN "Manufacturer_Name"
+F 6 "CC0603KRX7R9BB104" H 950 4150 50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "581-06035C104JAT2A" H 950 4150 50  0001 C CNN "Mouser Part Number"
+F 8 "" H 950 4150 50  0001 C CNN "JLPCB Part #"
+F 9 "Basic" H 950 4150 50  0001 C CNN "JLPCB Type"
+F 10 "C14663" H 950 4150 50  0001 C CNN "LCSC"
+	1    950  4150
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	950  3900 950  4050
+Connection ~ 950  3900
+Wire Wire Line
+	950  3800 950  3900
+Wire Wire Line
+	950  3900 1200 3900
+Wire Wire Line
+	950  4400 950  4250
+Connection ~ 950  4400
+Wire Wire Line
+	950  4550 950  4400
+Wire Wire Line
+	950  4400 1200 4400
+Text Notes 900  5150 0    50   ~ 0
+Recommended decouple: \n10uF per UVCC (4)\nand 0.1uF / VCC
+$Comp
+L power:VCC #PWR?
+U 1 1 612C18EA
+P 950 3800
+AR Path="/5D8219F0/612C18EA" Ref="#PWR?"  Part="1" 
+AR Path="/5D6CC2CC/612C18EA" Ref="#PWR?"  Part="1" 
+AR Path="/5E135D8F/612C18EA" Ref="#PWR?"  Part="1" 
+AR Path="/60039BC8/612C18EA" Ref="#PWR?"  Part="1" 
+AR Path="/612C18EA" Ref="#PWR012"  Part="1" 
+F 0 "#PWR012" H 950 3650 50  0001 C CNN
+F 1 "VCC" H 950 3950 50  0000 C CNN
+F 2 "" H 950 3800 50  0001 C CNN
+F 3 "" H 950 3800 50  0001 C CNN
+	1    950  3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 612C18F6
+P 1450 4150
+AR Path="/5D8219F0/612C18F6" Ref="C?"  Part="1" 
+AR Path="/5D6CC2CC/612C18F6" Ref="C?"  Part="1" 
+AR Path="/5E135D8F/612C18F6" Ref="C?"  Part="1" 
+AR Path="/60039BC8/612C18F6" Ref="C?"  Part="1" 
+AR Path="/612C18F6" Ref="C7"  Part="1" 
+F 0 "C7" H 1475 4250 50  0000 L CNN
+F 1 "100nF" H 1475 4050 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1488 4000 50  0001 C CNN
+F 3 "" H 1450 4150 50  0001 C CNN
+F 4 "" H 1450 4150 50  0001 C CNN "Field4"
+F 5 "YAGEO" H 1450 4150 50  0001 C CNN "Manufacturer_Name"
+F 6 "CC0603KRX7R9BB104" H 1450 4150 50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "581-06035C104JAT2A" H 1450 4150 50  0001 C CNN "Mouser Part Number"
+F 8 "" H 1450 4150 50  0001 C CNN "JLPCB Part #"
+F 9 "Basic" H 1450 4150 50  0001 C CNN "JLPCB Type"
+F 10 "C14663" H 1450 4150 50  0001 C CNN "LCSC"
+	1    1450 4150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 612C18FC
+P 950 4550
+AR Path="/5D8219F0/612C18FC" Ref="#PWR?"  Part="1" 
+AR Path="/5D6CC2CC/612C18FC" Ref="#PWR?"  Part="1" 
+AR Path="/5E135D8F/612C18FC" Ref="#PWR?"  Part="1" 
+AR Path="/60039BC8/612C18FC" Ref="#PWR?"  Part="1" 
+AR Path="/612C18FC" Ref="#PWR013"  Part="1" 
+F 0 "#PWR013" H 950 4300 50  0001 C CNN
+F 1 "GND" H 950 4400 50  0000 C CNN
+F 2 "" H 950 4550 50  0001 C CNN
+F 3 "" H 950 4550 50  0001 C CNN
+	1    950  4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 4400 1200 4250
+Wire Wire Line
+	1200 3900 1200 4050
+Connection ~ 1200 3900
+Wire Wire Line
+	1450 3900 1450 4050
+Wire Wire Line
+	1450 4400 1450 4250
+Wire Wire Line
+	1200 3900 1450 3900
+Wire Wire Line
+	1450 4400 1200 4400
+Connection ~ 1200 4400
+$Comp
+L Device:C_Small C?
+U 1 1 612C1910
+P 1200 4150
+AR Path="/5D8219F0/612C1910" Ref="C?"  Part="1" 
+AR Path="/5D6CC2CC/612C1910" Ref="C?"  Part="1" 
+AR Path="/5E135D8F/612C1910" Ref="C?"  Part="1" 
+AR Path="/60039BC8/612C1910" Ref="C?"  Part="1" 
+AR Path="/612C1910" Ref="C6"  Part="1" 
+F 0 "C6" H 1225 4250 50  0000 L CNN
+F 1 "100nF" H 1225 4050 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1238 4000 50  0001 C CNN
+F 3 "" H 1200 4150 50  0001 C CNN
+F 4 "" H 1200 4150 50  0001 C CNN "Field4"
+F 5 "YAGEO" H 1200 4150 50  0001 C CNN "Manufacturer_Name"
+F 6 "CC0603KRX7R9BB104" H 1200 4150 50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "581-06035C104JAT2A" H 1200 4150 50  0001 C CNN "Mouser Part Number"
+F 8 "" H 1200 4150 50  0001 C CNN "JLPCB Part #"
+F 9 "Basic" H 1200 4150 50  0001 C CNN "JLPCB Type"
+F 10 "C14663" H 1200 4150 50  0001 C CNN "LCSC"
+	1    1200 4150
+	-1   0    0    -1  
+$EndComp
+Connection ~ 1450 4400
+Connection ~ 1450 3900
+Wire Wire Line
+	8300 4800 8250 4800
+Connection ~ 8300 4800
+Text Label 9000 3550 0    50   ~ 0
+BOOT
+Wire Wire Line
+	8350 800  8350 950 
+$Comp
+L MCU_Microchip_ATmega:ATmega32U4-AU U?
+U 1 1 612C1922
+P 8350 2950
+AR Path="/5D8219F0/612C1922" Ref="U?"  Part="1" 
+AR Path="/5D6CC2CC/612C1922" Ref="U?"  Part="1" 
+AR Path="/5E135D8F/612C1922" Ref="U?"  Part="1" 
+AR Path="/60039BC8/612C1922" Ref="U?"  Part="1" 
+AR Path="/612C1922" Ref="U2"  Part="1" 
+F 0 "U2" H 8350 3050 50  0000 C CNN
+F 1 "ATmega32U4" H 8350 2850 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-44-1EP_7x7mm_P0.5mm_EP5.15x5.15mm" H 8350 2950 50  0001 C CIN
+F 3 "" H 9450 4050 50  0001 C CNN
+F 4 "ATMEGA32U4-MU" H 8350 2950 50  0001 C CNN "Manufacturer_Part_Number"
+F 5 "" H 8350 2950 50  0001 C CNN "Field4"
+F 6 "Microchip Tech" H 8350 2950 50  0001 C CNN "Manufacturer_Name"
+F 7 "556-ATMEGA32U4RC-MU" H 8350 2950 50  0001 C CNN "Mouser Part Number"
+F 8 "" H 8350 2950 50  0001 C CNN "JLPCB Part #"
+F 9 "Extended" H 8350 2950 50  0001 C CNN "JLPCB Type"
+F 10 "C112161" H 8350 2950 50  0001 C CNN "LCSC"
+	1    8350 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 612C192E
+P 7650 3050
+AR Path="/5E1CFEC6/612C192E" Ref="C?"  Part="1" 
+AR Path="/5E135D8F/612C192E" Ref="C?"  Part="1" 
+AR Path="/60039BC8/612C192E" Ref="C?"  Part="1" 
+AR Path="/612C192E" Ref="C4"  Part="1" 
+F 0 "C4" H 7559 3096 50  0000 R CNN
+F 1 "100nF" H 7559 3005 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7650 3050 50  0001 C CNN
+F 3 "" H 7650 3050 50  0001 C CNN
+F 4 "" H 7650 3050 50  0001 C CNN "Field4"
+F 5 "YAGEO" H 7650 3050 50  0001 C CNN "Manufacturer_Name"
+F 6 "CC0603KRX7R9BB104" H 7650 3050 50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "581-06035C104JAT2A" H 7650 3050 50  0001 C CNN "Mouser Part Number"
+F 8 "" H 7650 3050 50  0001 C CNN "JLPCB Part #"
+F 9 "Basic" H 7650 3050 50  0001 C CNN "JLPCB Type"
+F 10 "C14663" H 7650 3050 50  0001 C CNN "LCSC"
+	1    7650 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 612C193A
+P 6700 1950
+AR Path="/5D8219F0/612C193A" Ref="C?"  Part="1" 
+AR Path="/5D6CC2CC/612C193A" Ref="C?"  Part="1" 
+AR Path="/5E135D8F/612C193A" Ref="C?"  Part="1" 
+AR Path="/60039BC8/612C193A" Ref="C?"  Part="1" 
+AR Path="/612C193A" Ref="C2"  Part="1" 
+F 0 "C2" H 6725 2050 50  0000 L CNN
+F 1 "12pF" H 6725 1850 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6738 1800 50  0001 C CNN
+F 3 "" H 6700 1950 50  0001 C CNN
+F 4 "" H 6700 1950 50  0001 C CNN "Field4"
+F 5 "Samsung Electro-Mechanics" H 6700 1950 50  0001 C CNN "Manufacturer_Name"
+F 6 "CL10C120JB8NNNC" H 6700 1950 50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "581-06035A220J" H 6700 1950 50  0001 C CNN "Mouser Part Number"
+F 8 "" H 6700 1950 50  0001 C CNN "JLPCB Part #"
+F 9 "Basic" H 6700 1950 50  0001 C CNN "JLPCB Type"
+F 10 "C38523" H 6700 1950 50  0001 C CNN "LCSC"
+	1    6700 1950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 612C1946
+P 6700 1550
+AR Path="/5D8219F0/612C1946" Ref="C?"  Part="1" 
+AR Path="/5D6CC2CC/612C1946" Ref="C?"  Part="1" 
+AR Path="/5E135D8F/612C1946" Ref="C?"  Part="1" 
+AR Path="/60039BC8/612C1946" Ref="C?"  Part="1" 
+AR Path="/612C1946" Ref="C1"  Part="1" 
+F 0 "C1" H 6725 1650 50  0000 L CNN
+F 1 "12pF" H 6725 1450 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6738 1400 50  0001 C CNN
+F 3 "" H 6700 1550 50  0001 C CNN
+F 4 "" H 6700 1550 50  0001 C CNN "Field4"
+F 5 "Samsung Electro-Mechanics" H 6700 1550 50  0001 C CNN "Manufacturer_Name"
+F 6 "CL10C120JB8NNNC" H 6700 1550 50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "581-06035A220J" H 6700 1550 50  0001 C CNN "Mouser Part Number"
+F 8 "" H 6700 1550 50  0001 C CNN "JLPCB Part #"
+F 9 "Basic" H 6700 1550 50  0001 C CNN "JLPCB Type"
+F 10 "C38523" H 6700 1550 50  0001 C CNN "LCSC"
+	1    6700 1550
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 612C1952
+P 7150 2750
+AR Path="/5D8219F0/612C1952" Ref="C?"  Part="1" 
+AR Path="/5D6CC2CC/612C1952" Ref="C?"  Part="1" 
+AR Path="/5E135D8F/612C1952" Ref="C?"  Part="1" 
+AR Path="/60039BC8/612C1952" Ref="C?"  Part="1" 
+AR Path="/612C1952" Ref="C3"  Part="1" 
+F 0 "C3" H 7175 2850 50  0000 L CNN
+F 1 "1uF" H 7175 2650 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 7188 2600 50  0001 C CNN
+F 3 "" H 7150 2750 50  0001 C CNN
+F 4 "" H 7150 2750 50  0001 C CNN "Field4"
+F 5 "Samsung Electro-Mechanics" H 7150 2750 50  0001 C CNN "Manufacturer_Name"
+F 6 "CL21B105KBFNNNE" H 7150 2750 50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "187-CL21B105KBFNNNG" H 7150 2750 50  0001 C CNN "Mouser Part Number"
+F 8 "" H 7150 2750 50  0001 C CNN "JLPCB Part #"
+F 9 "Basic" H 7150 2750 50  0001 C CNN "JLPCB Type"
+F 10 "C28323" H 7150 2750 50  0001 C CNN "LCSC"
+	1    7150 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 612C1958
+P 6450 2850
+AR Path="/5D8219F0/612C1958" Ref="#PWR?"  Part="1" 
+AR Path="/5D6CC2CC/612C1958" Ref="#PWR?"  Part="1" 
+AR Path="/5E135D8F/612C1958" Ref="#PWR?"  Part="1" 
+AR Path="/60039BC8/612C1958" Ref="#PWR?"  Part="1" 
+AR Path="/612C1958" Ref="#PWR07"  Part="1" 
+F 0 "#PWR07" H 6450 2600 50  0001 C CNN
+F 1 "GND" H 6450 2700 50  0000 C CNN
+F 2 "" H 6450 2850 50  0001 C CNN
+F 3 "" H 6450 2850 50  0001 C CNN
+	1    6450 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 2750 6450 2750
+Wire Wire Line
+	6600 1550 6450 1550
+Wire Wire Line
+	6450 1950 6600 1950
+Wire Wire Line
+	8950 3950 9350 3950
+Wire Wire Line
+	8950 4050 9350 4050
+Wire Wire Line
+	8950 4150 9350 4150
+Wire Wire Line
+	8950 2950 9350 2950
+Wire Wire Line
+	8950 4250 9350 4250
+Wire Wire Line
+	8950 3250 9350 3250
+Wire Wire Line
+	8950 3350 9350 3350
+Text GLabel 9350 1750 2    50   Input ~ 0
+MISO
+Text GLabel 9350 1650 2    50   Input ~ 0
+MOSI
+Text GLabel 9350 1550 2    50   Input ~ 0
+SCK
+Wire Wire Line
+	8950 1450 9350 1450
+Text Label 7400 2750 0    50   ~ 0
+UCAP
+Text Label 7300 1550 0    50   ~ 0
+XTAL1
+Text Label 7300 1950 0    50   ~ 0
+XTAL2
+$Comp
+L power:GND #PWR?
+U 1 1 612C196F
+P 8300 4850
+AR Path="/5D8219F0/612C196F" Ref="#PWR?"  Part="1" 
+AR Path="/5D6CC2CC/612C196F" Ref="#PWR?"  Part="1" 
+AR Path="/5E135D8F/612C196F" Ref="#PWR?"  Part="1" 
+AR Path="/60039BC8/612C196F" Ref="#PWR?"  Part="1" 
+AR Path="/612C196F" Ref="#PWR014"  Part="1" 
+F 0 "#PWR014" H 8300 4600 50  0001 C CNN
+F 1 "GND" H 8300 4700 50  0000 C CNN
+F 2 "" H 8300 4850 50  0001 C CNN
+F 3 "" H 8300 4850 50  0001 C CNN
+	1    8300 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 612C1975
+P 8350 800
+AR Path="/5D8219F0/612C1975" Ref="#PWR?"  Part="1" 
+AR Path="/5D6CC2CC/612C1975" Ref="#PWR?"  Part="1" 
+AR Path="/5E135D8F/612C1975" Ref="#PWR?"  Part="1" 
+AR Path="/60039BC8/612C1975" Ref="#PWR?"  Part="1" 
+AR Path="/612C1975" Ref="#PWR01"  Part="1" 
+F 0 "#PWR01" H 8350 650 50  0001 C CNN
+F 1 "VCC" H 8350 950 50  0000 C CNN
+F 2 "" H 8350 800 50  0001 C CNN
+F 3 "" H 8350 800 50  0001 C CNN
+	1    8350 800 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 1450 7750 1450
+Wire Wire Line
+	7750 1650 7600 1650
+Wire Wire Line
+	7550 2250 7650 2250
+Text Label 7400 2550 0    50   ~ 0
+DD-
+Text Label 7400 2450 0    50   ~ 0
+DD+
+Text GLabel 6700 2550 0    50   Input ~ 0
+D-
+Text GLabel 6700 2450 0    50   Input ~ 0
+D+
+Wire Wire Line
+	8250 4800 8250 4750
+Wire Wire Line
+	8300 4800 8300 4850
+Wire Wire Line
+	8350 4750 8350 4800
+Wire Wire Line
+	8350 4800 8300 4800
+Wire Wire Line
+	9350 1550 8950 1550
+Wire Wire Line
+	8950 1650 9350 1650
+Wire Wire Line
+	9350 1750 8950 1750
+Wire Wire Line
+	8950 2650 9350 2650
+Connection ~ 6450 1950
+Connection ~ 6450 2750
+Wire Wire Line
+	7300 2750 7750 2750
+Wire Wire Line
+	6450 2750 6450 2850
+Text GLabel 7700 1050 1    50   Input ~ 0
+RESET
+$Comp
+L power:VCC #PWR?
+U 1 1 612F7581
+P 7200 6050
+AR Path="/5D8219F0/612F7581" Ref="#PWR?"  Part="1" 
+AR Path="/5D6CC2CC/612F7581" Ref="#PWR?"  Part="1" 
+AR Path="/5DEF6A4C/612F7581" Ref="#PWR?"  Part="1" 
+AR Path="/5D3D0542/612F7581" Ref="#PWR?"  Part="1" 
+AR Path="/5E49A860/612F7581" Ref="#PWR?"  Part="1" 
+AR Path="/5E135D8F/612F7581" Ref="#PWR?"  Part="1" 
+AR Path="/60039BC8/612F7581" Ref="#PWR?"  Part="1" 
+AR Path="/612F7581" Ref="#PWR015"  Part="1" 
+AR Path="/61263053/612F7581" Ref="#PWR?"  Part="1" 
+F 0 "#PWR015" H 7200 5900 50  0001 C CNN
+F 1 "VCC" H 7200 6200 50  0000 C CNN
+F 2 "" H 7200 6050 50  0001 C CNN
+F 3 "" H 7200 6050 50  0001 C CNN
+	1    7200 6050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 612F758E
+P 7550 6050
+AR Path="/5D8219F0/612F758E" Ref="R?"  Part="1" 
+AR Path="/5D6CC2CC/612F758E" Ref="R?"  Part="1" 
+AR Path="/5E135D8F/612F758E" Ref="R?"  Part="1" 
+AR Path="/60039BC8/612F758E" Ref="R?"  Part="1" 
+AR Path="/612F758E" Ref="R7"  Part="1" 
+AR Path="/61263053/612F758E" Ref="R?"  Part="1" 
+F 0 "R7" V 7630 6050 50  0000 C CNN
+F 1 "33" V 7550 6050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7480 6050 50  0001 C CNN
+F 3 "" H 7550 6050 50  0001 C CNN
+F 4 "" H 7550 6050 50  0001 C CNN "Field4"
+F 5 "Uniroyal Elec" H 7550 6050 50  0001 C CNN "Manufacturer_Name"
+F 6 "0603WAF330JT5E" H 7550 6050 50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "667-ERJ-3EKF33R0V" H 7550 6050 50  0001 C CNN "Mouser Part Number"
+F 8 "" H 7550 6050 50  0001 C CNN "JLPCB Part #"
+F 9 "Basic" H 7550 6050 50  0001 C CNN "JLPCB Type"
+F 10 "C23140" H 7550 6050 50  0001 C CNN "LCSC"
+	1    7550 6050
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:LED_Small LED_?
+U 1 1 612F759A
+P 7850 6050
+AR Path="/60039BC8/612F759A" Ref="LED_?"  Part="1" 
+AR Path="/612F759A" Ref="LED_2"  Part="1" 
+AR Path="/61263053/612F759A" Ref="LED_?"  Part="1" 
+F 0 "LED_2" H 7850 6285 50  0000 C CNN
+F 1 "PWR_LED" H 7850 6194 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" V 7850 6050 50  0001 C CNN
+F 3 "" V 7850 6050 50  0001 C CNN
+F 4 "" H 7850 6050 50  0001 C CNN "Field4"
+F 5 "Hubei KENTO Elec" H 7850 6050 50  0001 C CNN "Manufacturer_Name"
+F 6 "KT-0603R" H 7850 6050 50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "604-APT1608EC" H 7850 6050 50  0001 C CNN "Mouser Part Number"
+F 8 "" H 7850 6050 50  0001 C CNN "JLPCB Part #"
+F 9 "Basic" H 7850 6050 50  0001 C CNN "JLPCB Type"
+F 10 "C2286" H 7850 6050 50  0001 C CNN "LCSC"
+	1    7850 6050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7400 6050 7200 6050
+Wire Wire Line
+	7950 6050 8150 6050
+$Comp
+L power:GND #PWR?
+U 1 1 612F75A2
+P 8150 6050
+AR Path="/5D8219F0/612F75A2" Ref="#PWR?"  Part="1" 
+AR Path="/5D6CC2CC/612F75A2" Ref="#PWR?"  Part="1" 
+AR Path="/5DEF6A4C/612F75A2" Ref="#PWR?"  Part="1" 
+AR Path="/5E49A860/612F75A2" Ref="#PWR?"  Part="1" 
+AR Path="/5E135D8F/612F75A2" Ref="#PWR?"  Part="1" 
+AR Path="/60039BC8/612F75A2" Ref="#PWR?"  Part="1" 
+AR Path="/612F75A2" Ref="#PWR016"  Part="1" 
+AR Path="/61263053/612F75A2" Ref="#PWR?"  Part="1" 
+F 0 "#PWR016" H 8150 5800 50  0001 C CNN
+F 1 "GND" H 8150 5900 50  0000 C CNN
+F 2 "" H 8150 6050 50  0001 C CNN
+F 3 "" H 8150 6050 50  0001 C CNN
+	1    8150 6050
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	5550 7200 6000 7200
+Wire Wire Line
+	6000 7400 5900 7400
+Text GLabel 5900 7400 0    50   Input ~ 0
+MISO
+Wire Wire Line
+	6000 7000 5550 7000
+Text GLabel 5900 7500 0    50   Input ~ 0
+MOSI
+Text GLabel 5900 7300 0    50   Input ~ 0
+SCK
+Text GLabel 5950 7100 0    50   Input ~ 0
+RESET
+$Comp
+L power:GND #PWR?
+U 1 1 612F75AF
+P 5550 7200
+AR Path="/5D8219F0/612F75AF" Ref="#PWR?"  Part="1" 
+AR Path="/5D6CC2CC/612F75AF" Ref="#PWR?"  Part="1" 
+AR Path="/5DEF6A4C/612F75AF" Ref="#PWR?"  Part="1" 
+AR Path="/5E49A860/612F75AF" Ref="#PWR?"  Part="1" 
+AR Path="/5E135D8F/612F75AF" Ref="#PWR?"  Part="1" 
+AR Path="/60039BC8/612F75AF" Ref="#PWR?"  Part="1" 
+AR Path="/612F75AF" Ref="#PWR022"  Part="1" 
+AR Path="/61263053/612F75AF" Ref="#PWR?"  Part="1" 
+F 0 "#PWR022" H 5550 6950 50  0001 C CNN
+F 1 "GND" H 5550 7050 50  0000 C CNN
+F 2 "" H 5550 7200 50  0001 C CNN
+F 3 "" H 5550 7200 50  0001 C CNN
+	1    5550 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 612F75B5
+P 5550 7000
+AR Path="/5D6CC2CC/612F75B5" Ref="#PWR?"  Part="1" 
+AR Path="/5DEF6A4C/612F75B5" Ref="#PWR?"  Part="1" 
+AR Path="/5E49A860/612F75B5" Ref="#PWR?"  Part="1" 
+AR Path="/5E135D8F/612F75B5" Ref="#PWR?"  Part="1" 
+AR Path="/60039BC8/612F75B5" Ref="#PWR?"  Part="1" 
+AR Path="/612F75B5" Ref="#PWR021"  Part="1" 
+AR Path="/61263053/612F75B5" Ref="#PWR?"  Part="1" 
+F 0 "#PWR021" H 5550 6850 50  0001 C CNN
+F 1 "VCC" H 5567 7173 50  0000 C CNN
+F 2 "" H 5550 7000 50  0001 C CNN
+F 3 "" H 5550 7000 50  0001 C CNN
+	1    5550 7000
+	1    0    0    -1  
+$EndComp
+Text Notes 5850 6850 0    50   ~ 0
+JTAG Connector
+Wire Wire Line
+	5950 7100 6000 7100
+Wire Wire Line
+	5900 7500 6000 7500
+Wire Wire Line
+	5900 7300 6000 7300
+$Comp
+L Connector_Generic:Conn_01x06 J?
+U 1 1 612F75C2
+P 6200 7200
+AR Path="/60039BC8/612F75C2" Ref="J?"  Part="1" 
+AR Path="/612F75C2" Ref="J2"  Part="1" 
+AR Path="/61263053/612F75C2" Ref="J?"  Part="1" 
+F 0 "J2" H 6280 7192 50  0000 L CNN
+F 1 "Conn_01x06" H 6280 7101 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 6200 7200 50  0001 C CNN
+F 3 "" H 6200 7200 50  0001 C CNN
+F 4 "" H 6200 7200 50  0001 C CNN "Field4"
+F 5 " " H 6200 7200 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 " " H 6200 7200 50  0001 C CNN "Manufacturer_Name"
+F 7 "DNF" H 6200 7200 50  0001 C CNN "fit_field"
+	1    6200 7200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 2600 1550 2850
+Wire Wire Line
+	1250 2850 1550 2850
+Connection ~ 1550 2850
+Wire Wire Line
+	1550 2850 1550 3050
+Wire Wire Line
+	1550 2850 1800 2850
+Wire Wire Line
+	1550 3050 1750 3050
+$Comp
+L power:GNDPWR #PWR03
+U 1 1 612699A1
+P 2750 1300
+F 0 "#PWR03" H 2750 1100 50  0001 C CNN
+F 1 "GNDPWR" H 2754 1146 50  0000 C CNN
+F 2 "" H 2750 1250 50  0001 C CNN
+F 3 "" H 2750 1250 50  0001 C CNN
+	1    2750 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 6137F32A
+P 9500 6300
+F 0 "#FLG02" H 9500 6375 50  0001 C CNN
+F 1 "PWR_FLAG" H 9500 6473 50  0000 C CNN
+F 2 "" H 9500 6300 50  0001 C CNN
+F 3 "~" H 9500 6300 50  0001 C CNN
+	1    9500 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 613807BD
+P 9500 6300
+AR Path="/5D8219F0/613807BD" Ref="#PWR?"  Part="1" 
+AR Path="/5D6CC2CC/613807BD" Ref="#PWR?"  Part="1" 
+AR Path="/5E135D8F/613807BD" Ref="#PWR?"  Part="1" 
+AR Path="/60039BC8/613807BD" Ref="#PWR?"  Part="1" 
+AR Path="/613807BD" Ref="#PWR019"  Part="1" 
+F 0 "#PWR019" H 9500 6050 50  0001 C CNN
+F 1 "GND" H 9500 6150 50  0000 C CNN
+F 2 "" H 9500 6300 50  0001 C CNN
+F 3 "" H 9500 6300 50  0001 C CNN
+	1    9500 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDPWR #PWR018
+U 1 1 61381AC3
+P 9100 6300
+F 0 "#PWR018" H 9100 6100 50  0001 C CNN
+F 1 "GNDPWR" H 9104 6146 50  0000 C CNN
+F 2 "" H 9100 6250 50  0001 C CNN
+F 3 "" H 9100 6250 50  0001 C CNN
+	1    9100 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 61384112
+P 9100 6300
+F 0 "#FLG01" H 9100 6375 50  0001 C CNN
+F 1 "PWR_FLAG" H 9100 6473 50  0000 C CNN
+F 2 "" H 9100 6300 50  0001 C CNN
+F 3 "~" H 9100 6300 50  0001 C CNN
+	1    9100 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 6138E360
+P 4050 1100
+AR Path="/5D8219F0/6138E360" Ref="#PWR?"  Part="1" 
+AR Path="/5D6CC2CC/6138E360" Ref="#PWR?"  Part="1" 
+AR Path="/5E135D8F/6138E360" Ref="#PWR?"  Part="1" 
+AR Path="/60039BC8/6138E360" Ref="#PWR?"  Part="1" 
+AR Path="/6138E360" Ref="#PWR02"  Part="1" 
+F 0 "#PWR02" H 4050 950 50  0001 C CNN
+F 1 "VCC" H 4050 1250 50  0000 C CNN
+F 2 "" H 4050 1100 50  0001 C CNN
+F 3 "" H 4050 1100 50  0001 C CNN
+	1    4050 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 61392884
+P 9900 6300
+AR Path="/5D8219F0/61392884" Ref="#PWR?"  Part="1" 
+AR Path="/5D6CC2CC/61392884" Ref="#PWR?"  Part="1" 
+AR Path="/5E135D8F/61392884" Ref="#PWR?"  Part="1" 
+AR Path="/60039BC8/61392884" Ref="#PWR?"  Part="1" 
+AR Path="/61392884" Ref="#PWR020"  Part="1" 
+F 0 "#PWR020" H 9900 6150 50  0001 C CNN
+F 1 "VCC" H 9900 6450 50  0000 C CNN
+F 2 "" H 9900 6300 50  0001 C CNN
+F 3 "" H 9900 6300 50  0001 C CNN
+	1    9900 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG03
+U 1 1 61393FBD
+P 9900 6300
+F 0 "#FLG03" H 9900 6375 50  0001 C CNN
+F 1 "PWR_FLAG" H 9900 6473 50  0000 C CNN
+F 2 "" H 9900 6300 50  0001 C CNN
+F 3 "~" H 9900 6300 50  0001 C CNN
+	1    9900 6300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7700 1050 7700 1450
+Text Label 2250 1100 0    50   ~ 0
+VBUS
+Wire Wire Line
+	9700 1950 8950 1950
+Wire Wire Line
+	7750 6050 7700 6050
+Text GLabel 9350 3650 2    50   Input ~ 0
+RGB
+$Sheet
+S 3550 6450 1250 700 
+U 613CEF8E
+F0 "Matrix" 50
+F1 "matrix.sch" 50
+$EndSheet
+$Sheet
+S 650  5700 2100 1850
+U 6159EE28
+F0 "RGB" 50
+F1 "rgb.sch" 50
+$EndSheet
+$EndSCHEMATC
